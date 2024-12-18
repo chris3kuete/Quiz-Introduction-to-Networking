@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Good Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Start Quiz Button-->
+     <div class="start_btn">
+        <button>Start Quiz</button>
+     </div>
+
+     <!-- Info Box -->
+      <div class="info_box ">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>30 seconds</span> per each question</div>
+            <div class="info">2. Once your answer is selected, it can't be undone</div>
+            <div class="info">3. You can't select any option once time goes off</div>
+            <div class="info">4. You can't exit from the quiz while you are playing</div>
+            <div class="info">5. You will get a point everytime you choose a correct answer</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+      </div>
+
+      <!-- Quiz Box -->
+       <div class="quiz_box">
+        <header>
+            <div class="title">Ports Number Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here i have inserted options from javascript-->
+                 <p id="question"></p>
+
+            </div>
+            <div class="option_list">
+                <!-- Here i have inserted options from javascript-->
+                 
+            </div>
+        </section>
+
+        <!-- footer -->
+         <footer>
+            <div class="total_que">
+                <!-- Here i have inserted options from javascript-->
+            </div>
+            <button class="next_btn">Next Question</button>
+         </footer>
+       </div>
+
+       <!-- Result Box -->
+
+       <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text">You have completed the Quiz!</div>
+            <div class="score_text">
+                <!-- Here i have inserted options from javascript-->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+
+       </div>
+
+       <script src="js/script.js"></script>
+       <script src="js/question.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" ></script>
+</body>
+</html>
